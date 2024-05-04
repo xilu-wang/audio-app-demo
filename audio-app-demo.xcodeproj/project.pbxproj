@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51113EC42BE352120038390F /* audio_app_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EC32BE352120038390F /* audio_app_demoApp.swift */; };
-		51113EC62BE352120038390F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EC52BE352120038390F /* ContentView.swift */; };
+		51113EC42BE352120038390F /* DualPlayerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EC32BE352120038390F /* DualPlayerDemoApp.swift */; };
 		51113EC82BE352130038390F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51113EC72BE352130038390F /* Assets.xcassets */; };
-		51113ECB2BE352130038390F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51113ECA2BE352130038390F /* Preview Assets.xcassets */; };
-		51113ED52BE352130038390F /* audio_app_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113ED42BE352130038390F /* audio_app_demoTests.swift */; };
-		51113EDF2BE352130038390F /* audio_app_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EDE2BE352130038390F /* audio_app_demoUITests.swift */; };
-		51113EE12BE352130038390F /* audio_app_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EE02BE352130038390F /* audio_app_demoUITestsLaunchTests.swift */; };
+		51113EEE2BE352A40038390F /* DualPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51113EED2BE352A40038390F /* DualPlayerView.swift */; };
+		51CD5E612BE5B279004CB6F4 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD5E602BE5B279004CB6F4 /* PlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +32,12 @@
 
 /* Begin PBXFileReference section */
 		51113EC02BE352120038390F /* audio-app-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "audio-app-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51113EC32BE352120038390F /* audio_app_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio_app_demoApp.swift; sourceTree = "<group>"; };
-		51113EC52BE352120038390F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		51113EC32BE352120038390F /* DualPlayerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualPlayerDemoApp.swift; sourceTree = "<group>"; };
 		51113EC72BE352130038390F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51113ECA2BE352130038390F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51113ED02BE352130038390F /* audio-app-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "audio-app-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51113ED42BE352130038390F /* audio_app_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio_app_demoTests.swift; sourceTree = "<group>"; };
 		51113EDA2BE352130038390F /* audio-app-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "audio-app-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51113EDE2BE352130038390F /* audio_app_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio_app_demoUITests.swift; sourceTree = "<group>"; };
-		51113EE02BE352130038390F /* audio_app_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio_app_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51113EED2BE352A40038390F /* DualPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualPlayerView.swift; sourceTree = "<group>"; };
+		51CD5E602BE5B279004CB6F4 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +68,7 @@
 		51113EB72BE352120038390F = {
 			isa = PBXGroup;
 			children = (
-				51113EC22BE352120038390F /* audio-app-demo */,
-				51113ED32BE352130038390F /* audio-app-demoTests */,
-				51113EDD2BE352130038390F /* audio-app-demoUITests */,
+				51113EC22BE352120038390F /* DualPlayerDemo */,
 				51113EC12BE352120038390F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,40 +83,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		51113EC22BE352120038390F /* audio-app-demo */ = {
+		51113EC22BE352120038390F /* DualPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				51113EC32BE352120038390F /* audio_app_demoApp.swift */,
-				51113EC52BE352120038390F /* ContentView.swift */,
+				51CD5E622BE5B7A5004CB6F4 /* View */,
+				51CD5E5F2BE5B263004CB6F4 /* ViewModels */,
+				51113EC32BE352120038390F /* DualPlayerDemoApp.swift */,
 				51113EC72BE352130038390F /* Assets.xcassets */,
-				51113EC92BE352130038390F /* Preview Content */,
 			);
-			path = "audio-app-demo";
+			path = DualPlayerDemo;
 			sourceTree = "<group>";
 		};
-		51113EC92BE352130038390F /* Preview Content */ = {
+		51CD5E5F2BE5B263004CB6F4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				51113ECA2BE352130038390F /* Preview Assets.xcassets */,
+				51CD5E602BE5B279004CB6F4 /* PlayerViewModel.swift */,
 			);
-			path = "Preview Content";
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		51113ED32BE352130038390F /* audio-app-demoTests */ = {
+		51CD5E622BE5B7A5004CB6F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				51113ED42BE352130038390F /* audio_app_demoTests.swift */,
+				51113EED2BE352A40038390F /* DualPlayerView.swift */,
 			);
-			path = "audio-app-demoTests";
-			sourceTree = "<group>";
-		};
-		51113EDD2BE352130038390F /* audio-app-demoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				51113EDE2BE352130038390F /* audio_app_demoUITests.swift */,
-				51113EE02BE352130038390F /* audio_app_demoUITestsLaunchTests.swift */,
-			);
-			path = "audio-app-demoUITests";
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51113ECB2BE352130038390F /* Preview Assets.xcassets in Resources */,
 				51113EC82BE352130038390F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51113EC62BE352120038390F /* ContentView.swift in Sources */,
-				51113EC42BE352120038390F /* audio_app_demoApp.swift in Sources */,
+				51CD5E612BE5B279004CB6F4 /* PlayerViewModel.swift in Sources */,
+				51113EC42BE352120038390F /* DualPlayerDemoApp.swift in Sources */,
+				51113EEE2BE352A40038390F /* DualPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51113ED52BE352130038390F /* audio_app_demoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51113EE12BE352130038390F /* audio_app_demoUITestsLaunchTests.swift in Sources */,
-				51113EDF2BE352130038390F /* audio_app_demoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +401,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"audio-app-demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JH45HUSL4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"audio-app-demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JH45HUSL4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
